@@ -1,0 +1,24 @@
+{
+	"autoload" : {
+		"classmap" : [
+			"./Teste.php"
+		],
+		"psr-4" : {
+			"Composer\\Buscadoralura\\" : "src",
+			"" : ""
+		}
+	},
+	"name" : "composer/buscadoralura",
+	"require" : {
+		"php" : ">=7.3",
+		"guzzlehttp/guzzle" : "^6.3",
+		"symfony/dom-crawler" : "^4.3",
+		"symfony/css-selector" : "^4.3"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^8.4"
+	},
+	"scripts" : {
+        "test" : "phpunit buscarcursos.php"
+	}
+}
